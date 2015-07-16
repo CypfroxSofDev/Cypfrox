@@ -1,0 +1,75 @@
+        .tile-area-controls {
+            position: fixed;
+            right: 40px;
+            top: 40px;
+        }
+
+        .tile-group {
+            left: 100px;
+        }
+
+        .tile, .tile-small, .tile-sqaure, .tile-wide, .tile-large, .tile-big, .tile-super {
+            opacity: 0;
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+        }
+
+        .charm.right-side {
+            width: 600px;
+            right: -600px;
+        }
+
+        .charm.left-side {
+            width: 300px;
+            left: -300px;
+        }
+
+        #charmSettings .button {
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 640px) {
+
+        .charm.right-side {
+            width: 100%;
+            right: -100%;
+        }
+        .charm.left-side {
+            width: 100%;
+            left: -100%;
+        }
+
+        .tile-area-controls {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+        }
+
+        .tile-group {
+            right: 50px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+
+        .charm.right-side {
+            width: 100%;
+            right: -100%;
+
+        }
+
+        .charm.left-side {
+            width: 100%;
+            left: -100%;
+        }
+
+        .tile-area-controls {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+        }
+
+        .tile-group {
+            right: 50px;
+         }
+    }

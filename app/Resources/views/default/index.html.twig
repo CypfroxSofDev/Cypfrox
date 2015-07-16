@@ -1,40 +1,59 @@
+<!DOCTYPE html>
 <html>
-<link href="css/cypfrox.css" rel="stylesheet" type="text/css"/>
-	<head>
-	<meta charset="UTF-8">
-	<title>Cypfrox industries</title>
-	</head>
-		<body>
+<head lang="es">
+    <meta charset="UTF-8">
+	<link href="{{ asset('css/cypfrox.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/metro.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/metro-icons.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
+    <script src="{{ asset('js/menuDerecho.js') }}"></script>
+    <script src="{{ asset('js/metro.js') }}"></script>
+
+    <link href="{{ asset('css/menuDerecho.css') }}" rel="stylesheet">
+</head>
+<body>
+	<div class="charm right-side padding20 bg-white fg-black" id="charmSearch">
+        <button class="square-button bg-transparent fg-black no-border place-right small-button" onclick="showSearch()"><span class="mif-cross"></span></button>
+        <h1 class="text-light">Buscar</h1>
+        <hr class="thin"/>
+        <br />
+        <div class="input-control text full-size">
+            <label>
+                <span class="dropdown-toggle drop-marker-dark">Filtros</span>
+                <ul class="d-menu" data-role="dropdown">
+                	<li><a onclick="setSearchPlace(this)">Nombre</a></li>
+                    <li><a onclick="setSearchPlace(this)">Cargo</a></li>
+                    <li><a onclick="setSearchPlace(this)">Documento</a></li>
+                </ul>
+            </label>
+            <input type="text">
+            <button class="button"><span class="mif-search"></span></button>
+        </div>
+    </div>
+
+    <div class="charm left-side padding20 bg-white fg-black" id="charmIoseet">
+    <button class="square-button bg-transparent fg-black no-border place-right small-button" onclick="showIoseet()"><span class="mif-cross"></span></button>
+    <center>
+     	<table><tr><td><a href="#"><img src="{{ asset('images/1.png') }}" id="imgsrc"></a></td><td><h1 class="text-light">Ioseet</h1></td></tr></table>
+     	<hr class="thin bg-black"/>
+		<div id="texto">
+			Ioseet, es uno de nuestros productos diseñado para que el publico , pueda conocer las empresas del mundo
+		</div>
+	</center>			
+    </div>
+    <div class="tile-area-controls" style="z-index:9;">
+    	<button style="padding-left:5px;"class="image-button bg-white fg-black no-border"><span class="sub-header no-margin text-light"><span class="mif-lab"></span> &nbsp;&nbsp;Nuestras ideas</span></button>
+    	<button class="square-button bg-cyan fg-white bg-hover-white fg-hover-black no-border" onclick="showIoseet()"></button>
+    	<button class="square-button bg-orange fg-white bg-hover-gray fg-hover-black no-border"></button>
+    	<button class="square-button bg-red fg-white bg-hover-gray fg-hover-black no-border"></button>
+        <button class="square-button bg-dark fg-white bg-hover-white fg-hover-black no-border" onclick="showSearch()"><span class="mif-search"></span></button>
+    </div>
+
+ <!-- Index -->
 	<div id="headerindex">
 		<div id="headerbox">
-				<div id="titulo"><img src="img/logo.png" width="600" height="150"></div>
+			<div id="titulo"><img src="{{ asset('images/logo.png') }}" width="1000" height="680"></div>
 		</div>
 	</div>
-			
-			<div id="bottomheader">
-				<div id="bottombox">
-					<b><table>
-							<tr>
-								<td><a href="http://www.ioseet.com"><img src="img/1.png" id="imgsrc"></a></td><td>
-								<h1>Ioseet</h1>
-								<div id="texto">Ioseet, es uno de nuestros productos diseñado para que el publico , pueda conocer las empresas del mundo</div>
-					</td></tr></table>
-					
-					</b>
-				
-					
-				</div>
-					<div class="pie">
-				Copyright Cypfrox Industries © 2014-2015
-				</div>
-			</div>
-			
-			
-		
-		
-		
-		
-		
-		
-		</body>
+</body>
 </html>
